@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <parameter name="userID" value="taislu@hotmail.com"></parameter>
+  <parameter name="passWORD" value="New17127!"></parameter>
+
+  <test thread-count="5" name="Test">
+    <classes>   
+      <class name="HelloMaven.UploadProfilePhoto"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

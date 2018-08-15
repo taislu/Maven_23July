@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="62137" started-at="2018-08-15T11:35:19Z" finished-at="2018-08-15T11:36:21Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="62137" started-at="2018-08-15T11:35:19Z" finished-at="2018-08-15T11:36:21Z">
+      <class name="HelloMaven.UploadProfilePhoto">
+        <test-method status="PASS" signature="test_setup()[pri:0, instance:HelloMaven.UploadProfilePhoto@7d9d1a19]" name="test_setup" is-config="true" duration-ms="16415" started-at="2018-08-15T11:35:19Z" finished-at="2018-08-15T11:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_setup -->
+        <test-method status="PASS" signature="test_userLogin(java.lang.String, java.lang.String)[pri:1, instance:HelloMaven.UploadProfilePhoto@7d9d1a19]" name="test_userLogin" duration-ms="10772" started-at="2018-08-15T11:35:36Z" finished-at="2018-08-15T11:35:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[taislu@hotmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New17127!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_userLogin -->
+        <test-method status="PASS" signature="test_uploadProfilePhoto()[pri:2, instance:HelloMaven.UploadProfilePhoto@7d9d1a19]" name="test_uploadProfilePhoto" duration-ms="33919" started-at="2018-08-15T11:35:47Z" finished-at="2018-08-15T11:36:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_uploadProfilePhoto -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:HelloMaven.UploadProfilePhoto@7d9d1a19]" name="closeBrowser" is-config="true" duration-ms="969" started-at="2018-08-15T11:36:20Z" finished-at="2018-08-15T11:36:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- HelloMaven.UploadProfilePhoto -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

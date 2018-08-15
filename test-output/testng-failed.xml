@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="passWORD" value="New17127!"/>
+  <parameter name="userID" value="taislu@hotmail.com"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="HelloMaven.UploadProfilePhoto">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="test_uploadProfilePhoto"/>
+          <include name="test_setup"/>
+        </methods>
+      </class> <!-- HelloMaven.UploadProfilePhoto -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
