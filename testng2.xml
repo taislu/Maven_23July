@@ -3,7 +3,7 @@
 <suite name="Suite">
 
   <parameter name="userID" value="taislu@hotmail.com"></parameter>
-  <parameter name="passWORD" value="New17127!"></parameter>
+  <parameter name="passWORD" value="Testng99"></parameter>
 
   <test thread-count="5" name="Test">
     <classes>   
