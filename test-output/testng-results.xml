@@ -1,41 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="62137" started-at="2018-08-15T11:35:19Z" finished-at="2018-08-15T11:36:21Z">
+  <suite name="Default suite" duration-ms="6370" started-at="2018-08-16T03:15:02Z" finished-at="2018-08-16T03:15:08Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="62137" started-at="2018-08-15T11:35:19Z" finished-at="2018-08-15T11:36:21Z">
-      <class name="HelloMaven.UploadProfilePhoto">
-        <test-method status="PASS" signature="test_setup()[pri:0, instance:HelloMaven.UploadProfilePhoto@7d9d1a19]" name="test_setup" is-config="true" duration-ms="16415" started-at="2018-08-15T11:35:19Z" finished-at="2018-08-15T11:35:36Z">
+    <test name="Default test" duration-ms="6370" started-at="2018-08-16T03:15:02Z" finished-at="2018-08-16T03:15:08Z">
+      <class name="edurekatest.HeadlessBrowsers">
+        <test-method status="FAIL" signature="HtmlUnitDriverBrowing()[pri:2, instance:edurekatest.HeadlessBrowsers@76a3e297]" name="HtmlUnitDriverBrowing" duration-ms="6307" started-at="2018-08-16T03:15:02Z" finished-at="2018-08-16T03:15:08Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element with name: q
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DELL-2014NOV', ip: '192.168.1.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: driver.version: HtmlUnitDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element with name: q
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DELL-2014NOV', ip: '192.168.1.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: driver.version: HtmlUnitDriver
+at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElementByName(HtmlUnitDriver.java:1344)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.htmlunit.HtmlUnitDriver$4.call(HtmlUnitDriver.java:2024)
+at org.openqa.selenium.htmlunit.HtmlUnitDriver$4.call(HtmlUnitDriver.java:2020)
+at org.openqa.selenium.htmlunit.HtmlUnitDriver.implicitlyWaitFor(HtmlUnitDriver.java:1646)
+at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:2020)
+at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:798)
+at edurekatest.HeadlessBrowsers.HtmlUnitDriverBrowing(HeadlessBrowsers.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_setup -->
-        <test-method status="PASS" signature="test_userLogin(java.lang.String, java.lang.String)[pri:1, instance:HelloMaven.UploadProfilePhoto@7d9d1a19]" name="test_userLogin" duration-ms="10772" started-at="2018-08-15T11:35:36Z" finished-at="2018-08-15T11:35:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[taislu@hotmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[New17127!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_userLogin -->
-        <test-method status="PASS" signature="test_uploadProfilePhoto()[pri:2, instance:HelloMaven.UploadProfilePhoto@7d9d1a19]" name="test_uploadProfilePhoto" duration-ms="33919" started-at="2018-08-15T11:35:47Z" finished-at="2018-08-15T11:36:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_uploadProfilePhoto -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:HelloMaven.UploadProfilePhoto@7d9d1a19]" name="closeBrowser" is-config="true" duration-ms="969" started-at="2018-08-15T11:36:20Z" finished-at="2018-08-15T11:36:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- HelloMaven.UploadProfilePhoto -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- HtmlUnitDriverBrowing -->
+      </class> <!-- edurekatest.HeadlessBrowsers -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

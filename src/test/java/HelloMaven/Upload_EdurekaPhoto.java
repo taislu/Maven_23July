@@ -16,7 +16,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class UploadProfilePhoto {
+public class Upload_EdurekaPhoto {
 	
 	static WebDriver driver;
 	static WebDriverWait wait;
@@ -75,8 +75,8 @@ public class UploadProfilePhoto {
 		logInfo("Navigate to My Profile Page");
 		driver.navigate().to("https://learning.edureka.co/my-profile");
 		
-		logInfo("WebDriver Wait on page loading complete");
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='https://www.youtube.com/user/edurekaIN']")));
+		//logInfo("WebDriver Wait on page loading complete");
+		//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='https://www.youtube.com/user/edurekaIN']")));
 	
 		logInfo("Click Editing personal_details");
 		FindElement(driver, By.id("personal_details"), 4).click();
@@ -140,7 +140,7 @@ public class UploadProfilePhoto {
 		FindElement(driver, By.linkText("Log In"), 4).click();
 		
 		logInfo("WebDriver Wait on LOGIN button to be clickable");
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//button[@type='submit'])[4]")));
+		//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//button[@type='submit'])[4]")));
 		
 		Thread.sleep(3000);
 		
@@ -154,7 +154,7 @@ public class UploadProfilePhoto {
 		FindElement(driver, By.xpath("(//button[@type='submit'])[4]"), 4).click();
 		
 		logInfo("WebDriver Wait on login complete");
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='https://www.youtube.com/user/edurekaIN']")));
+		//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='https://www.youtube.com/user/edurekaIN']")));
 	
 	}
 	
@@ -195,7 +195,7 @@ public class UploadProfilePhoto {
 		try {
 			
 			WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
-			wait.until(ExpectedConditions.presenceOfElementLocated(by));
+			//wait.until(ExpectedConditions.presenceOfElementLocated(by));
 			
 			logInfo( "FindElement *** " + by + " *** Found");
 			return driver.findElement(by);
@@ -217,6 +217,63 @@ public class UploadProfilePhoto {
 
 }
 
+/*
+[RemoteTestNG] detected TestNG version 6.14.3
+2018-08-15T14:42:44.048 : browserSetup()  ********
+2018-08-15T14:42:44.168 : Start chrome browser
+Starting ChromeDriver 2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e) on port 7066
+Only local connections are allowed.
+[1534369376.403][WARNING]: Timed out connecting to Chrome, retrying...
+Aug 15, 2018 2:42:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+2018-08-15T14:42:57.704 : Set the page load timeout for any page load
+2018-08-15T14:42:57.720 : Navigate to url : https://www.edureka.co/
+2018-08-15T14:43:03.209 : Maximize window
+2018-08-15T14:43:05.442 : Set implicit wait for all the activities on the browser
+2018-08-15T14:43:05.451 : Set selenium script timeout
+2018-08-15T14:43:05.461 : Execute any asynchronous script
+2018-08-15T14:43:06.070 : WebDriver Wait maxWaitSeconds : 30
+2018-08-15T14:43:06.127 : UserID : taislu@hotmail.com, Passwd : Testng99
+2018-08-15T14:43:06.127 : test_Login()  ********
+2018-08-15T14:43:06.127 : Click Log In
+2018-08-15T14:43:06.704 : FindElement *** By.linkText: Log In *** Found
+2018-08-15T14:43:07.106 : WebDriver Wait on LOGIN button to be clickable
+2018-08-15T14:43:11.903 : Enter Email ID
+2018-08-15T14:43:11.946 : FindElement *** By.id: inputName *** Found
+2018-08-15T14:43:14.716 : Enter Password
+2018-08-15T14:43:14.740 : FindElement *** By.id: pwd1 *** Found
+2018-08-15T14:43:15.385 : Click LOGIN
+2018-08-15T14:43:15.404 : FindElement *** By.xpath: (//button[@type='submit'])[4] *** Found
+2018-08-15T14:43:15.780 : WebDriver Wait on login complete
+2018-08-15T14:43:19.986 : test_UpdatePersonalDetails()  ********
+2018-08-15T14:43:19.986 : Navigate to My Profile Page
+2018-08-15T14:43:24.161 : WebDriver Wait on page loading complete
+2018-08-15T14:43:24.268 : Click Editing personal_details
+2018-08-15T14:43:24.301 : FindElement *** By.id: personal_details *** Found
+2018-08-15T14:43:24.911 : Click Camera on profile picture
+2018-08-15T14:43:24.988 : FindElement *** By.xpath: //i[@class='icon-camera'] *** Found
+2018-08-15T14:43:25.167 : Pause for few seconds
+2018-08-15T14:43:28.167 : Click Choose File
+2018-08-15T14:43:28.208 : FindElement *** By.id: custom-input *** Found
+2018-08-15T14:43:28.413 : Pause for few seconds
+2018-08-15T14:43:34.414 : Run AutoIT script to select the profile photo
+2018-08-15T14:43:34.830 : Pause for few seconds
+2018-08-15T14:43:37.831 : Click Upload
+2018-08-15T14:43:39.228 : FindElement *** By.xpath: //button[@class='submitbtn'] *** Found
+2018-08-15T14:43:39.654 : Navigate to home page
+2018-08-15T14:43:42.367 : Pause for few seconds
+2018-08-15T14:43:45.368 : Click Profile Picture
+2018-08-15T14:43:45.525 : Pause for few seconds
+2018-08-15T14:43:48.526 : Click Log Out
+2018-08-15T14:43:51.364 : Pause for few seconds
+2018-08-15T14:43:54.368 : browserClose()  ********
+2018-08-15T14:43:54.368 : Closing chrome
+2018-08-15T14:43:55.245 : DONE!
 
+===============================================
+Suite
+Total tests run: 2, Failures: 0, Skips: 0
+===============================================
+ */
 
 
