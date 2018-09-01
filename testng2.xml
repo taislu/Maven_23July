@@ -7,7 +7,7 @@
 
   <test thread-count="5" name="Test">
     <classes>   
-      <class name="HelloMaven.Upload_EdurekaPhoto"/>
+      <class name="HelloMaven.Test1_RestApiBasicForJson"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

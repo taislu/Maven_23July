@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="HelloMaven.Test1_RestApiBasicForJson" duration-ms="5834" started-at="2018-09-01T12:21:10Z" finished-at="2018-09-01T12:21:16Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="5834" started-at="2018-09-01T12:21:10Z" finished-at="2018-09-01T12:21:16Z">
+      <class name="HelloMaven.Test1_RestApiBasicForJson">
+        <test-method status="PASS" signature="testEqualToMethod()[pri:0, instance:HelloMaven.Test1_RestApiBasicForJson@48eff760]" name="testEqualToMethod" duration-ms="4803" started-at="2018-09-01T12:21:10Z" finished-at="2018-09-01T12:21:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEqualToMethod -->
+        <test-method status="PASS" signature="testHasItemsMethod()[pri:0, instance:HelloMaven.Test1_RestApiBasicForJson@48eff760]" name="testHasItemsMethod" duration-ms="328" started-at="2018-09-01T12:21:15Z" finished-at="2018-09-01T12:21:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHasItemsMethod -->
+        <test-method status="PASS" signature="testLogging()[pri:0, instance:HelloMaven.Test1_RestApiBasicForJson@48eff760]" name="testLogging" duration-ms="266" started-at="2018-09-01T12:21:15Z" finished-at="2018-09-01T12:21:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogging -->
+        <test-method status="PASS" signature="testParameters()[pri:0, instance:HelloMaven.Test1_RestApiBasicForJson@48eff760]" name="testParameters" duration-ms="203" started-at="2018-09-01T12:21:15Z" finished-at="2018-09-01T12:21:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParameters -->
+        <test-method status="PASS" signature="testStatusCode()[pri:0, instance:HelloMaven.Test1_RestApiBasicForJson@48eff760]" name="testStatusCode" duration-ms="156" started-at="2018-09-01T12:21:16Z" finished-at="2018-09-01T12:21:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatusCode -->
+      </class> <!-- HelloMaven.Test1_RestApiBasicForJson -->
+    </test> <!-- Command line test -->
+  </suite> <!-- HelloMaven.Test1_RestApiBasicForJson -->
+</testng-results>
